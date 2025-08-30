@@ -1,0 +1,10 @@
+[project]
+name = "sample-agent-with-tools"
+version = "1.0.0"
+description = "AI agent - homework 1 - simple agent with sample tools"
+requires-python = ">=3.12"
+dependencies = [
+    "openai",
+    "requests",
+    "dotenv"
+]
