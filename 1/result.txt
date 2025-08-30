@@ -1,0 +1,34 @@
+=== OpenAI Function Calling Demo s Weather API ===
+
+Dotaz 1: Jaká je plocha kruhu s poloměrem 5?
+Volám funkci: calculate_area
+S argumenty: {'shape': 'circle', 'radius': 5}
+Odpověď: Plocha kruhu s poloměrem 5 je přibližně 78,54 čtverečních jednotek.
+
+--------------------------------------------------
+Dotaz 2: Vypočítej plochu obdélníku o rozměrech 10x8
+Volám funkci: calculate_area
+S argumenty: {'shape': 'rectangle', 'width': 10, 'height': 8}
+Odpověď: Plocha obdélníku o rozměrech 10x8 je 80 metrů čtverečních.
+
+--------------------------------------------------
+Dotaz 3: Jaké je počasí v Praze?
+Volám funkci: get_weather
+S argumenty: {'city': 'Praha'}
+Odpověď: V Praze je aktuálně 23.3 °C, částečně oblačno. Vlhkost vzduchu je 47 % a vítr fouká rychlostí 12.2 km/h. Pocitová teplota je 24.7 °C.
+
+--------------------------------------------------
+Dotaz 4: Jak je na tom počasí v Londýně?
+Volám funkci: get_weather
+S argumenty: {'city': 'London'}
+Odpověď: V Londýně je aktuálně částečně oblačno s teplotou 20.3°C. Vlhkost vzduchu je 64 % a vítr fouká rychlostí 24.5 km/h. Pocitová teplota odpovídá skutečné teplotě, tedy také 20.3°C.
+
+--------------------------------------------------
+Dotaz 5: Kolik je 13+21?
+Volám funkci: calculate_area
+S argumenty: {'shape': 'rectangle', 'width': 34, 'height': 24}
+Odpověď: Výsledek součtu 13+21 je 34.
+
+Výsledkem výpočtu obsahu obdélníku o stranách délky 34 a 24 je 816.
+
+--------------------------------------------------

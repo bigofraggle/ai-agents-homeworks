@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Nastavení API klíčů
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")  # Nahraďte svým OpenAI API klíčem
-WEATHER_API_KEY =  os.environ.get("WEATHER_API_KEY")  # Nahraďte svým WeatherAPI klíčem
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+WEATHER_API_KEY =  os.environ.get("WEATHER_API_KEY")
 
 
 client = OpenAI(
@@ -217,13 +217,14 @@ def main():
 
 if __name__ == "__main__":
     # Kontrola API klíčů před spuštěním
-    if WEATHER_API_KEY == "your-weatherapi-key-here":
+    if WEATHER_API_KEY == "your-weather-api-key":
         print("⚠️  UPOZORNĚNÍ: Nezapomeňte nastavit WEATHER_API_KEY!")
         print("   Registrujte se na https://www.weatherapi.com/ pro zdarma API klíč")
         print()
     
-    if OPENAI_API_KEY == "your-openai-api-key-here":
+    if OPENAI_API_KEY == "your-openai-api-key":
         print("⚠️  UPOZORNĚNÍ: Nezapomeňte nastavit OpenAI API klíč!")
         print()
     
-    main()
+    if WEATHER_API_KEY != "your-weather-api-key" and OPENAI_API_KEY != "your-openai-api-key":
+        main()

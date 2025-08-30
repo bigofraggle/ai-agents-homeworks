@@ -1,0 +1,3 @@
+# Test Key for Weather API:
+
+96c92b1068f64c3b86594621253008
