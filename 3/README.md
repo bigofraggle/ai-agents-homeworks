@@ -51,7 +51,7 @@ Edit `.env` file:
 ANTHROPIC_API_KEY=your_anthropic_api_key_here
 OPENAI_API_KEY=your_openai_api_key_here  # Optional - improves chat history quality
 PINECONE_API_KEY=your_pinecone_api_key_here
-PINECONE_INDEX_NAME=chat-history-openai
+PINECONE_INDEX_NAME=chat-history
 TAVILY_API_KEY=your_tavily_api_key_here
 ```
 
